@@ -1,2 +1,2 @@
 # Sort Visualiser <br />
-[sortvisualiser.vercel.app](sortvisualiser.vercel.app)
+[sortvisualiser.vercel.app](https://sortvisualiser.vercel.app/)
