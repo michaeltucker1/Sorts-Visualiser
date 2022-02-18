@@ -69,6 +69,7 @@ function App() {
             barsRef.current.childNodes[j].style.backgroundColor = "blue"
             barsRef.current.childNodes[j + 1].style.backgroundColor = "blue"
           }
+
         }
       }
       setIsSorting(false)
@@ -130,7 +131,7 @@ function App() {
         of their current position */
         while (j >= 0 && arr[j] > key) {
           barsRef.current.childNodes[j].style.backgroundColor = "red"
-          await sleep(speed/2)
+          await sleep(speed)
           arr[j + 1] = arr[j];
           barsRef.current.childNodes[j].style.backgroundColor = "blue"
           j = j - 1;
