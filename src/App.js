@@ -77,6 +77,8 @@ function App() {
       for (var index = 0; index < arr.length; index++) {
         barsRef.current.childNodes[index].style.backgroundColor = "green"
       }
+    }else{
+      alert("Please wait until sorting has finished to tweak parameters!")
     }
   }
 
@@ -115,6 +117,8 @@ function App() {
       for (var index = 0; index < arr.length; index++) {
         barsRef.current.childNodes[index].style.backgroundColor = "green"
       }
+    }else{
+      alert("Please wait until sorting has finished to tweak parameters!")
     }
   }
 
@@ -145,6 +149,8 @@ function App() {
       for (var index = 0; index < arr.length; index++) {
         barsRef.current.childNodes[index].style.backgroundColor = "green"
       }
+    }else{
+      alert("Please wait until sorting has finished to tweak parameters!")
     }
   }
 
@@ -158,6 +164,8 @@ function App() {
         }
       }
       setLengthOfArray(newValue);
+    }else{
+      alert("Please wait until sorting has finished to tweak parameters!")
     }
   };
 
@@ -171,6 +179,8 @@ function App() {
       } else {
         setSpeed(0)
       };
+    }else{
+      alert("Please wait until sorting has finished to tweak parameters!")
     }
   };
 
