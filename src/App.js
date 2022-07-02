@@ -151,23 +151,27 @@ function App() {
 
   //Handles changing the value of the length slider
   const handleLengthChange = (event, newValue) => {
-    if (isSorted === true) {
-      for (var i = 0; i < numbersToSort.length; i++) {
-        barsRef.current.childNodes[i].style.backgroundColor = "blue"
+    if(isSorting === false){
+      if (isSorted === true) {
+        for (var i = 0; i < numbersToSort.length; i++) {
+          barsRef.current.childNodes[i].style.backgroundColor = "blue"
+        }
       }
+      setLengthOfArray(newValue);
     }
-    setLengthOfArray(newValue);
   };
 
   //Handles changing the value of the speed slider
   const handleSpeedChange = (event, newValue) => {
-    if (newValue === 1) {
-      setSpeed(100)
-    } else if (newValue === 2) {
-      setSpeed(20);
-    } else {
-      setSpeed(0)
-    };
+    if(isSorting === false){
+      if (newValue === 1) {
+        setSpeed(100)
+      } else if (newValue === 2) {
+        setSpeed(20);
+      } else {
+        setSpeed(0)
+      };
+    }
   };
 
   return (
